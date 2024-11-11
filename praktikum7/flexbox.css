@@ -1,0 +1,108 @@
+.content {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* Container layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header, Menu, Main, Sidebar, Footer styling */
+#header,#navbar, #sidebar, #main, #footer {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    font-size: 24pt;
+    font-weight: bolder;
+    text-align: center;
+}
+    /* Header */
+#header {
+    display: flex; /* Menggunakan flexbox untuk header */
+    justify-content: space-between;
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    margin: 20px;
+    background-color: #01ff5e; /* Warna latar belakang untuk header */
+}
+#header h1 {
+    margin: 0;
+    font-size: 24pt;
+}
+#navbar {
+    display: flex; /* Menggunakan flexbox untuk navbar */
+    justify-content: flex-end; /* Menyelaraskan elemen ke kanan */
+    margin-left: auto; /* Menggeser navbar ke kanan */
+}
+
+#navbar > div {
+margin-left: 10px; /* Jarak antar elemen navbar */
+}
+h3 {
+    margin: 0; /* Menghilangkan margin untuk h3 */
+}
+
+h6 {
+    margin: 0; /* Menghilangkan margin untuk h6 */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* Agar #sidebar dan #main sejajar */
+}
+#sidebar {
+    width: 230px; /* Lebar sidebar */
+    background-color: #0bceff; /* Warna latar belakang sidebar */
+    padding: 20px; /* Padding untuk sidebar */
+    margin-right: 20px; /* Margin kanan untuk jarak antara sidebar dan konten */
+}
+#sidebar h4 {
+    margin-top: 0; /* Menghilangkan margin atas untuk judul */
+}
+
+.sidebar-box {
+    background-color: #ffffff; /* Warna latar belakang untuk kotak di sidebar */
+    margin: 10px 0; /* Margin vertikal antar kotak */
+    padding: 15px; /* Padding untuk kotak */
+    border-radius: 5px; /* Sudut membulat untuk kotak */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+#main {
+    flex: 1; /* Mengizinkan elemen main untuk mengisi ruang yang tersedia */
+    background-color: dodgerblue; /* Warna latar belakang untuk main */
+    padding: 20px; /* Padding untuk main */
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Agar elemen bisa membungkus ke baris berikutnya */
+    background-color: DodgerBlue;
+    align-items: center;
+    justify-content: center; /* Untuk meratakan elemen secara horizontal */
+}
+
+.flex-container > div {
+    background-color: #ffffff;
+    margin: 10px; /* Margin yang lebih kecil untuk elemen */
+    padding: 30px;
+    font-size: 30px; /* Ukuran font yang lebih kecil */
+    border-radius: 10%;
+    flex: 30%; /* Mengatur lebar elemen */
+    box-sizing: border-box; 
+}
+
+
+#footer {
+    padding: 0%;
+    margin: 0%;
+}
+#footer h6{
+    background-color: #01ff5e;
+    padding: 1%;
+}
+    
+    
+    
+    
